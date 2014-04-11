@@ -1,0 +1,20 @@
+<head>
+	<title>contacts</title>
+</head>
+
+<body>
+	{{> main }}
+</body>
+
+<template name="main">
+	{{# if newUser }}
+        {{> newUser }}
+    {{ else }}
+        {{# if loggedIn}}
+            {{> app }}
+        {{ else }}
+            {{> login}}
+        {{/ if }}
+    {{/ if }}
+</template>	
+

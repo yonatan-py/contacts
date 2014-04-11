@@ -1,0 +1,13 @@
+<template name="myContacts">
+	<div class="nav bs-sidenav">
+		<div class="panel-body">
+			<ul class="list-group">
+	        {{# each contacts }}	
+				<li class="list-group-item">
+					{{ name }}
+				</li>
+			{{/ each}}
+	    	</ul>	
+		</div>
+	</div>
+</template>

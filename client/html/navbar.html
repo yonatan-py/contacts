@@ -1,0 +1,43 @@
+<template name="navbar">
+<div class="navbar">
+  		<div class="navbar-inner">
+    		<ul class="nav">
+                {{# if user.admin }}
+                    <li class="add-user">
+                        <a href="#" >
+                            add user
+                        </a>
+                    </li>
+                {{/ if }}
+	      		<li class="add-contact">
+	      			<a href="#" >
+	      				add contact
+	      			</a>
+	      		</li>
+	      		<li class="my-contacts">
+	      			<a href="#" >
+	      				my contacts
+	      			</a>
+	      		</li>
+	      		<li class="active dropdown">
+	      			<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+	      				dropdown
+	      			</a>
+	      			<ul class="dropdown-menu" >
+					  <li><a tabindex="-1" href="#">Action</a></li>
+					  <li><a tabindex="-1" href="#">Another action</a></li>
+					  <li><a tabindex="-1" href="#">Something else here</a></li>
+					  <li class="divider"></li>
+					  <li><a tabindex="-1" href="#">Separated link</a></li>
+					</ul>
+	      		</li>
+	      		<li>
+	      			<a href="#">
+	      				Link
+	      			</a>
+	      		</li>
+    		</ul>
+    		{{> loginButtons}}
+  		</div>
+	</div>
+	</template>

@@ -1,0 +1,14 @@
+<template name="mainContent">
+	<div>
+		{{# if currentAction "add-contact"}}
+			{{> addContact }}
+		{{/if}}
+		{{# if currentAction "my-contacts"}}
+			{{> myContacts }}
+			{{> viewContact }}
+		{{/if}}
+        {{# if currentAction "add-user"}}
+            {{> addUser }}
+        {{/if}}
+	</div>
+</template>
